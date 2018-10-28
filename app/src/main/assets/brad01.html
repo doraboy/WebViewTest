@@ -9,9 +9,13 @@
      function test3(){
         var str = prompt('Input your name');
     }
-     function test4(newname){
+    function test4(newname){
         var name = document.getElementById('name');
         name.innerHTML = newname;
+    }
+    function test5(){
+        var username = document.getElementById('username');
+        brad.callFromJS(username.value);
     }
 </script>
 
@@ -20,8 +24,11 @@
 Hello, <span id='name'>World</span><br>
 <a href='brad02.html'>Page2</a>
 <hr />
+<input type="text"  id="username"/>
+<hr />
 <input type="button"  onclick="test1()"  value="Click Me"/>
 <input type="button"  onclick="test2()"  value="alert"/>
 <input type="button"  onclick="test3()"  value="prompt"/>
+<input type="button"  onclick="test5()"  value="call Android"/>
 <hr />
 <div id='here'></div>
